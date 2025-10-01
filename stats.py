@@ -1,7 +1,10 @@
+from typing import Dict # это для python3.8, в более новых можно писать просто dict[str, str]
+
+
 def get_num_words(str) -> int:
     return len(str.split())
 
-def get_num_chars(str: str) -> dict:
+def get_num_chars(str: str) -> Dict[str, int]:
     chars = {}
     for c in str:
         low = c.lower()
